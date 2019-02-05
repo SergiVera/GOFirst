@@ -1,9 +1,0 @@
-<!--We receive the title of the page from the wiki.go file-->
-<h1>Editing {{.Title}}</h1>
-
-<!--We put a form where the user can enter the body of the page within a form-->
-<form action="/save/{{.Title}}" method="POST">
-<div><textarea name="body" rows="20" cols="80">{{printf "%s" .Body}}</textarea></div>
-<!--Submit type input to save the body-->
-<div><input type="submit" value="Save"></div>
-</form>
